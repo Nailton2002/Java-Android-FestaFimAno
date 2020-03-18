@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:padding="8dp"
+    tools:context=".view.MainActivity">
+    //android:background="@drawable/ic_launcher_background"
+
+    <TextView
+        android:id="@+id/text_today"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="07/03/2020"
+        android:textSize="26dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/text_today"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/text_label_days_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_today"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:text="@string/dias_restantes_para_o_fim_de_ano"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_days_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_label_days_left"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="365 dias"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40sp" />
+
+
+    <Button
+        android:id="@+id/button_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_background"
+        android:padding="24dp"
+        android:text="SIM/NÃO/Não confirmado"
+        android:textColor="@color/colorTextWhite"
+        android:textSize="18sp" />
+</RelativeLayout>
